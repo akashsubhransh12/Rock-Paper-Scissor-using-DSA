@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors Game</h1>
+        <div id="register-section">
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" id="username" placeholder="Enter your name" required>
+                <button type="submit">Start Game</button>
+            </form>
+        </div>
+        <div id="game-section" style="display: none;">
+            <h2>Welcome, <span id="display-username"></span>!</h2>
+            <div class="game-area">
+                <div class="choices">
+                    <div class="choice" id="rock">
+                        <img src="Rock.png" alt="Rock">
+                    </div>
+                    <div class="choice" id="paper">
+                        <img src="Paper.png" alt="Paper">
+                    </div>
+                    <div class="choice" id="scissors">
+                        <img src="Scissors.png" alt="Scissors">
+                    </div>
+                </div>
+                <div class="result">
+                    <p id="user-choice">Your choice: </p>
+                    <p id="computer-choice">Computer's choice: </p>
+                    <p id="winner">Winner: </p>
+                </div>
+                <button id="play-again">Play Again</button>
+            </div>
+            <div class="score" id="score">User: 0 - Computer: 0</div>
+            <div class="history">
+                <h2>Game History</h2>
+                <ul id="history"></ul>
+            </div>
+            <div class="stats">
+                <h2>Statistics</h2>
+                <div id="stats"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
